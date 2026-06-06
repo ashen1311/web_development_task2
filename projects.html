@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Projects — Ashen Paul</title>
+  <meta name="description" content="Projects built by Ashen Paul — accessible web apps, tools, and experiments using HTML5, CSS3, and JavaScript." />
+  <meta name="author"  content="Ashen Paul" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ashenpaul.dev/projects.html" />
+
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://ashenpaul.dev/projects.html" />
+  <meta property="og:title"       content="Projects — Ashen Paul" />
+  <meta property="og:description" content="Accessible web apps and tools built by Ashen Paul." />
+
+  <meta name="twitter:card"  content="summary" />
+  <meta name="twitter:title" content="Projects — Ashen Paul" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Ashen Paul — homepage">
+        Ashen<span class="logo-dot">.</span>
+      </a>
+      <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Open navigation menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+      <nav id="main-nav" class="primary-nav" aria-label="Main navigation">
+        <ul role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <button class="theme-toggle" aria-label="Switch to light mode" id="theme-btn">
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+
+    <section class="page-hero" aria-labelledby="proj-h1">
+      <div class="container">
+        <span class="section-label" aria-hidden="true">// things I've built</span>
+        <h1 id="proj-h1">Projects</h1>
+        <p>
+          A mix of coursework, personal experiments, and real client work.
+          Some polished, some still rough — all honest.
+        </p>
+      </div>
+    </section>
+
+    <!-- FILTER BAR -->
+    <div class="filter-bar" aria-labelledby="filter-label">
+      <div class="container">
+        <p id="filter-label" class="sr-only">Filter projects by category</p>
+        <div class="filter-group" role="group" aria-labelledby="filter-label">
+          <button class="filter-btn" aria-pressed="true"  data-filter="all">All</button>
+          <button class="filter-btn" aria-pressed="false" data-filter="html-css">HTML / CSS</button>
+          <button class="filter-btn" aria-pressed="false" data-filter="javascript">JavaScript</button>
+          <button class="filter-btn" aria-pressed="false" data-filter="a11y">Accessibility</button>
+        </div>
+        <p aria-live="polite" aria-atomic="true" id="filter-status" class="sr-only"></p>
+      </div>
+    </div>
+
+    <!-- PROJECTS LIST — CSS Grid (single col with rich cards) -->
+    <section aria-labelledby="proj-list-label" style="padding-block:1rem 5rem;">
+      <div class="container">
+        <h2 id="proj-list-label" class="sr-only">All projects</h2>
+        <ul class="projects-list" id="proj-list" role="list" aria-label="Project list">
+
+          <!-- Campus Ride Share -->
+          <li id="campus-ride" data-category="html-css javascript a11y">
+            <article class="proj-full reveal" aria-labelledby="p1-title">
+              <div class="proj-thumb-lg"
+                   style="background:linear-gradient(135deg,#1c2a1e,#2a3a2c);"
+                   aria-hidden="true">🌿</div>
+              <div class="proj-full-body">
+                <header>
+                  <h3 id="p1-title">Campus Ride Share</h3>
+                  <p class="proj-full-meta">
+                    <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                    <time datetime="2024">2024</time>
+                  </p>
+                </header>
+                <p>
+                  A carpooling web app I built for a university module. Students
+                  can post or find rides between campus and the city. The brief
+                  said "make a form" — I turned it into a properly semantic,
+                  keyboard-navigable interface because it felt wrong not to.
+                </p>
+                <h4>What I focused on</h4>
+                <ul class="achievements" aria-label="Campus Ride Share highlights">
+                  <li>Full keyboard navigation — every action reachable without a mouse</li>
+                  <li>Semantic form with grouped inputs and descriptive labels</li>
+                  <li>ARIA live region announces newly posted ride listings</li>
+                  <li>Lighthouse Accessibility score: 100</li>
+                </ul>
+                <ul class="tag-list" role="list" aria-label="Technologies used">
+                  <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>ARIA</li>
+                </ul>
+                <div class="proj-links">
+                  <a href="https://github.com/ashenpaul/campus-rideshare"
+                     target="_blank" rel="noopener noreferrer"
+                     class="btn btn-solid btn-sm"
+                     aria-label="Campus Ride Share source code on GitHub (opens in new tab)">GitHub</a>
+                  <a href="https://ashenpaul.github.io/campus-rideshare"
+                     target="_blank" rel="noopener noreferrer"
+                     class="btn btn-sm"
+                     aria-label="Campus Ride Share live demo (opens in new tab)">Live Demo</a>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <!-- Task Board -->
+          <li id="task-board" data-category="javascript a11y">
+            <article class="proj-full reveal" aria-labelledby="p2-title">
+              <div class="proj-thumb-lg"
+                   style="background:linear-gradient(135deg,#1c1e2a,#2c2a3a);"
+                   aria-hidden="true">📋</div>
+              <div class="proj-full-body">
+                <header>
+                  <h3 id="p2-title">Task Board</h3>
+                  <p class="proj-full-meta">
+                    <span>JavaScript</span><span>CSS Grid</span>
+                    <time datetime="2024">2024</time>
+                  </p>
+                </header>
+                <p>
+                  A Kanban task manager. You can drag cards between columns or
+                  do everything with a keyboard too — which was the hard part.
+                  I implemented the ARIA drag-and-drop pattern from the W3C guide
+                  and learned more about focus management than anything else I've done.
+                </p>
+                <h4>What I focused on</h4>
+                <ul class="achievements" aria-label="Task Board highlights">
+                  <li>Keyboard drag-and-drop using ARIA grabbed / dropeffect</li>
+                  <li>Status announcements via <code>aria-live="assertive"</code></li>
+                  <li>localStorage persistence — tasks survive a refresh</li>
+                  <li>CSS Grid for column layout — no frameworks at all</li>
+                </ul>
+                <ul class="tag-list" role="list" aria-label="Technologies used">
+                  <li>JavaScript</li><li>CSS Grid</li><li>localStorage</li><li>ARIA</li>
+                </ul>
+                <div class="proj-links">
+                  <a href="https://github.com/ashenpaul/task-board"
+                     target="_blank" rel="noopener noreferrer"
+                     class="btn btn-solid btn-sm"
+                     aria-label="Task Board source code on GitHub (opens in new tab)">GitHub</a>
+                  <a href="https://ashenpaul.github.io/task-board"
+                     target="_blank" rel="noopener noreferrer"
+                     class="btn btn-sm"
+                     aria-label="Task Board live demo (opens in new tab)">Live Demo</a>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <!-- Dev Notes Blog -->
+          <li id="dev-notes" data-category="html-css a11y">
+            <article class="proj-full reveal" aria-labelledby="p3-title">
+              <div class="proj-thumb-lg"
+                   style="background:linear-gradient(135deg,#2a1c1c,#3a2a2a);"
+                   aria-hidden="true">📰</div>
+              <div class="proj-full-body">
+                <header>
+                  <h3 id="p3-title">Dev Notes Blog</h3>
+                  <p class="proj-full-meta">
+                    <span>HTML5</span><span>CSS3</span><span>RSS</span>
+                    <time datetime="2024">2024</time>
+                  </p>
+                </header>
+                <p>
+                  A static blog where I write up things I'm learning. No JS
+                  framework, no static site generator — just HTML files and a
+                  stylesheet. Wanted to see how far pure HTML semantics could take me.
+                  The answer: quite far.
+                </p>
+                <h4>What I focused on</h4>
+                <ul class="achievements" aria-label="Dev Notes Blog highlights">
+                  <li>Proper <code>&lt;article&gt;</code> and <code>&lt;section&gt;</code> structure</li>
+                  <li>RSS feed with correct <code>&lt;pubDate&gt;</code> and <code>&lt;guid&gt;</code></li>
+                  <li>Semantic <code>&lt;time datetime&gt;</code> on every post date</li>
+                  <li>Reading time estimate via a tiny JS snippet</li>
+                </ul>
+                <ul class="tag-list" role="list" aria-label="Technologies used">
+                  <li>HTML5</li><li>CSS3</li><li>RSS</li>
+                </ul>
+                <div class="proj-links">
+                  <a href="https://github.com/ashenpaul/dev-notes"
+                     target="_blank" rel="noopener noreferrer"
+                     class="btn btn-solid btn-sm"
+                     aria-label="Dev Notes Blog source code on GitHub (opens in new tab)">GitHub</a>
+                  <a href="https://ashenpaul.github.io/dev-notes"
+                     target="_blank" rel="noopener noreferrer"
+                     class="btn btn-sm"
+                     aria-label="Dev Notes Blog live site (opens in new tab)">Live Site</a>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <!-- Bakery -->
+          <li id="bakery" data-category="html-css">
+            <article class="proj-full reveal" aria-labelledby="p4-title">
+              <div class="proj-thumb-lg"
+                   style="background:linear-gradient(135deg,#2a2210,#3a3018);"
+                   aria-hidden="true">🍞</div>
+              <div class="proj-full-body">
+                <header>
+                  <h3 id="p4-title">Malini's Bakery — Website</h3>
+                  <p class="proj-full-meta">
+                    <span>HTML5</span><span>CSS3</span><span>Freelance</span>
+                    <time datetime="2024">2024</time>
+                  </p>
+                </header>
+                <p>
+                  A small business website for a local bakery — three pages: home,
+                  menu, contact. The owner wanted something that "doesn't look like
+                  a template", so I built it from scratch. Good challenge. Still live.
+                </p>
+                <h4>What I focused on</h4>
+                <ul class="achievements" aria-label="Bakery website highlights">
+                  <li>Responsive layout — works on any screen size</li>
+                  <li>Menu structured as a proper <code>&lt;table&gt;</code> with headers</li>
+                  <li>Google Maps embed with visible label for screen readers</li>
+                  <li>Delivered on time and still running today</li>
+                </ul>
+                <ul class="tag-list" role="list" aria-label="Technologies used">
+                  <li>HTML5</li><li>CSS3</li><li>Responsive</li>
+                </ul>
+                <div class="proj-links">
+                  <a href="https://github.com/ashenpaul/malinis-bakery"
+                     target="_blank" rel="noopener noreferrer"
+                     class="btn btn-solid btn-sm"
+                     aria-label="Malini's Bakery source code on GitHub (opens in new tab)">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p class="footer-copy">© <time datetime="2025">2025</time> Ashen Paul · built by hand, line by line.</p>
+      <nav class="foot-nav" aria-label="Footer links">
+        <ul role="list">
+          <li><a href="https://github.com/ashenpaul"      target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in new tab)">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/ashenpaul" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">LinkedIn</a></li>
+          <li><a href="mailto:hello@ashenpaul.dev" aria-label="Email Ashen">Email</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
