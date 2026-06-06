@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>About — Ashen Paul</title>
+  <meta name="description" content="A bit more about Ashen Paul — where he's from, how he got into web dev, and what he cares about when building for the web." />
+  <meta name="author"  content="Ashen Paul" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ashenpaul.dev/about.html" />
+
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://ashenpaul.dev/about.html" />
+  <meta property="og:title"       content="About — Ashen Paul" />
+  <meta property="og:description" content="How Ashen Paul got into web dev and what drives his work." />
+
+  <meta name="twitter:card"  content="summary" />
+  <meta name="twitter:title" content="About — Ashen Paul" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Ashen Paul — homepage">
+        Ashen<span class="logo-dot">.</span>
+      </a>
+      <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Open navigation menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+      <nav id="main-nav" class="primary-nav" aria-label="Main navigation">
+        <ul role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <button class="theme-toggle" aria-label="Switch to light mode" id="theme-btn">
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-labelledby="about-h1">
+      <div class="container">
+        <span class="section-label" aria-hidden="true">// about me</span>
+        <h1 id="about-h1">The longer version.</h1>
+        <p>Here's a bit more context about who I am and how I ended up here.</p>
+      </div>
+    </section>
+
+    <!-- BIO — CSS Grid: avatar + text -->
+    <section class="bio-section" aria-labelledby="bio-h">
+      <div class="container bio-grid">
+
+        <div class="reveal">
+          <div class="bio-avatar" role="img" aria-label="Illustrated placeholder portrait of Ashen Paul">AP</div>
+        </div>
+
+        <div class="bio-text reveal">
+          <h2 id="bio-h" class="sr-only">Biography</h2>
+          <p>
+            Hey — I'm Ashen. I'm a web development intern working my way through
+            the full stack of building real, live websites. One task at a time,
+            one bug at a time.
+          </p>
+          <p>
+            I grew up in India and picked up HTML during an internship 
+            that was supposed to be a break. It wasn't. The moment I understood
+            that a <code>&lt;button&gt;</code> and a <code>&lt;div onclick&gt;</code>
+            are genuinely different things — not just stylistically but for real users —
+            I was in.
+          </p>
+          <p>
+            Right now accessibility is what I care most about. The idea that the same
+            HTML I write could either help or completely block a person using a screen
+            reader sits with me. I'd rather get the fundamentals right than chase whatever
+            framework is trending this month.
+          </p>
+          <p>
+            Outside code: hiking when the weather agrees, reading non-fiction,
+            and convincing myself I'll eventually get good at chess.
+          </p>
+          <a href="assets/ashen-paul-cv.pdf" class="btn btn-solid" download
+             style="margin-top:1.5rem;"
+             aria-label="Download Ashen Paul's CV as a PDF file">
+            Download CV
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE — Timeline with CSS Grid dot + content -->
+    <section class="exp-section" aria-labelledby="exp-h">
+      <div class="container">
+        <span class="section-label" aria-hidden="true">// where I've been</span>
+        <h2 id="exp-h">Experience &amp; Education</h2>
+
+        <ol class="timeline reveal" aria-label="Experience and education timeline">
+
+          <li class="tl-item">
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-content">
+              <article aria-labelledby="exp1-title">
+                <h3 id="exp1-title">Web Development Intern</h3>
+                <p class="tl-meta">
+                  <span class="tl-org">Tech Startup — Internship</span>
+                  <time datetime="2025-01">Jan 2025</time> – Present
+                </p>
+                <p>
+                  Working on a live product — fixing Lighthouse accessibility
+                  failures, refactoring old table-based layouts to semantic HTML,
+                  and building a contact module from scratch. First time shipping
+                  code that real users interact with.
+                </p>
+              </article>
+            </div>
+          </li>
+
+          <li class="tl-item">
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-content">
+              <article aria-labelledby="exp2-title">
+                <h3 id="exp2-title">Freelance Web Projects</h3>
+                <p class="tl-meta">
+                  <span class="tl-org">Self-employed</span>
+                  <time datetime="2024-06">Jun</time> –
+                  <time datetime="2024-12">Dec 2024</time>
+                </p>
+                <p>
+                  Three small business websites — a bakery, a tutoring service,
+                  and a photography portfolio. Learned about client feedback cycles,
+                  and even more about making things look right on every screen size.
+                </p>
+              </article>
+            </div>
+          </li>
+
+          <li class="tl-item">
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-content">
+              <article aria-labelledby="exp3-title">
+                <h3 id="exp3-title">BSc Information Technology</h3>
+                <p class="tl-meta">
+                  <span class="tl-org">University of Moratuwa</span>
+                  <time datetime="2022">2022</time> –
+                  <time datetime="2026">2026 (expected)</time>
+                </p>
+                <p>
+                  Coursework in algorithms, databases, software engineering.
+                  HCI and UX Design electives are what pushed me specifically
+                  toward front-end work.
+                </p>
+              </article>
+            </div>
+          </li>
+
+          <li class="tl-item">
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-content">
+              <article aria-labelledby="exp4-title">
+                <h3 id="exp4-title">Self-Study — HTML5 &amp; Accessibility</h3>
+                <p class="tl-meta">
+                  <span class="tl-org">MDN, W3C, freeCodeCamp</span>
+                  <time datetime="2023">2023</time> – Present
+                </p>
+                <p>
+                  The WCAG guidelines are public. The ARIA Authoring Practices
+                  Guide is free. I spent a lot of evenings reading both and
+                  the W3C APG is still bookmarked and visited often.
+                </p>
+              </article>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- SKILLS — CSS Grid auto-fill -->
+    <section class="skills-section" aria-labelledby="skills-h2">
+      <div class="container">
+        <span class="section-label" aria-hidden="true">// what I know</span>
+        <h2 id="skills-h2">Skills</h2>
+        <div class="skills-grid reveal-stagger" role="list" aria-label="Skill categories">
+
+          <article class="skill-card" role="listitem" aria-labelledby="sk2-html">
+            <span class="skill-card-icon" aria-hidden="true">⟨/⟩</span>
+            <h3 id="sk2-html">HTML &amp; Semantics</h3>
+            <ul role="list" aria-label="HTML skills">
+              <li>HTML5 sectioning elements</li>
+              <li>ARIA roles, states, properties</li>
+              <li>Landmark &amp; heading structure</li>
+              <li>SEO meta &amp; Open Graph tags</li>
+              <li>Schema.org JSON-LD</li>
+              <li>Tab order &amp; focus management</li>
+            </ul>
+          </article>
+
+          <article class="skill-card" role="listitem" aria-labelledby="sk2-css">
+            <span class="skill-card-icon" aria-hidden="true">#</span>
+            <h3 id="sk2-css">CSS</h3>
+            <ul role="list" aria-label="CSS skills">
+              <li>CSS Grid — complex 2D layouts</li>
+              <li>Flexbox — component alignment</li>
+              <li>CSS custom properties</li>
+              <li>Mobile-first media queries</li>
+              <li>Light / dark mode theming</li>
+              <li>prefers-reduced-motion</li>
+            </ul>
+          </article>
+
+          <article class="skill-card" role="listitem" aria-labelledby="sk2-js">
+            <span class="skill-card-icon" aria-hidden="true">JS</span>
+            <h3 id="sk2-js">JavaScript</h3>
+            <ul role="list" aria-label="JavaScript skills">
+              <li>Vanilla ES2022+</li>
+              <li>Accessible form validation</li>
+              <li>Keyboard event handling</li>
+              <li>IntersectionObserver (reveal)</li>
+              <li>Theme toggle with localStorage</li>
+            </ul>
+          </article>
+
+          <article class="skill-card" role="listitem" aria-labelledby="sk2-tools">
+            <span class="skill-card-icon" aria-hidden="true">⚙</span>
+            <h3 id="sk2-tools">Tools</h3>
+            <ul role="list" aria-label="Tool skills">
+              <li>Git &amp; GitHub</li>
+              <li>VS Code</li>
+              <li>Chrome DevTools</li>
+              <li>Lighthouse CI</li>
+              <li>axe DevTools</li>
+              <li>NVDA screen reader testing</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p class="footer-copy">© <time datetime="2025">2025</time> Ashen Paul · built by hand, line by line.</p>
+      <nav class="foot-nav" aria-label="Footer links">
+        <ul role="list">
+          <li><a href="https://github.com/ashenpaul"      target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in new tab)">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/ashenpaul" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">LinkedIn</a></li>
+          <li><a href="mailto:hello@ashenpaul.dev" aria-label="Email Ashen">Email</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
